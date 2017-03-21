@@ -881,6 +881,7 @@ static KVNProgressConfiguration *configuration;
 	
     KVNRotationViewController *rotationVC = (KVNRotationViewController *)self.progressWindow.rootViewController;
     rotationVC.supportedOrientations = self.configuration.supportedOrientations;
+    rotationVC.statusBarStyle = self.configuration.preferredStatusBarStyle;
     
 	self.progressWindow.frame = self.originalKeyWindow.frame;
 	

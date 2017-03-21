@@ -15,5 +15,6 @@
 @interface KVNRotationViewController : UIViewController
 
 @property (nonatomic, assign) UIInterfaceOrientationMask supportedOrientations;
+@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 
 @end

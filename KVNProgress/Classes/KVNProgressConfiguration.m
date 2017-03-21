@@ -43,6 +43,8 @@
 		_allowUserInteraction = NO;
         
         _supportedOrientations = UIInterfaceOrientationMaskAll;
+        
+        _preferredStatusBarStyle = UIStatusBarStyleDefault;
 	}
 	
 	return self;
@@ -82,7 +84,8 @@
 	copy.allowUserInteraction = self.allowUserInteraction;
     
     copy.supportedOrientations = self.supportedOrientations;
-	
+    copy.preferredStatusBarStyle = self.preferredStatusBarStyle;
+    
 	return copy;
 }
 

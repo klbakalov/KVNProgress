@@ -20,6 +20,7 @@
     
     if (self) {
         self.supportedOrientations = UIInterfaceOrientationMaskAll;
+        self.statusBarStyle = UIStatusBarStyleDefault;
     }
     
     return self;
@@ -28,6 +29,11 @@
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
 	return self.supportedOrientations;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return self.statusBarStyle;
 }
 
 - (BOOL)shouldAutorotate
